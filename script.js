@@ -331,7 +331,10 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!card) return;
 
       const gap = parseFloat(getComputedStyle(track).gap) || 0;
-      const cardWidth = (viewport.clientWidth - (gap * 2)) / 3;
+      const isMobile = viewport.clientWidth < 720;
+      const cardWidth = isMobile
+        ? Math.round(viewport.clientWidth * 0.80)
+        : (viewport.clientWidth - (gap * 2)) / 3;
       allCards.forEach((c) => {
         c.style.width = `${cardWidth}px`;
       });
