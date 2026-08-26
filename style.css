@@ -184,7 +184,7 @@ ul{ margin:0; padding:0; list-style:none; }
   width: 30px; height: 30px;
   border-radius: 8px;
   background-color: var(--accent);
-  background-image: url(assets/images/Sheena-Chibi.png);
+  background-image: url(assets/images/Sheena-Chibi.webp);
   color: var(--surface);
   display:flex; align-items:center; justify-content:center;
   font-family: var(--font-mono);
