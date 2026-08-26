@@ -7,18 +7,18 @@
 
 /* ---------- Tokens ---------- */
 :root{
-  --paper: #FEF2A0;
-  --paper-alt: #F3CD97;
-  --ink: #3E2A18;
-  --ink-soft: #6F5B49;
-  --line: #F2D7A8;
-  --surface: #FFFFFF;
+  --paper: #FFF6A1;
+  --paper-alt: #FDC086;
+  --ink: #A4B885;
+  --ink-soft: #D46D25;
+  --line: #FDC086;
+  --surface: #FFF6A1;
 
-  --accent: #E98B50;
-  --accent-ink: #4F2E14;
-  --accent-tint: #F3CD97;
-  --gold: #F3CD97;          /* used only for achievement/award marks */
-  --brick: #BC4F4F;         /* rare, CTA emphasis only */
+  --accent: #D46D25;
+  --accent-ink: #FFF6A1;
+  --accent-tint: #FDC086;
+  --gold: #A4B885;
+  --brick: #D46D25;
 
   --radius-lg: 22px;
   --radius-md: 14px;
@@ -33,18 +33,18 @@
 }
 
 [data-theme="dark"]{
-  --paper: #524646;
-  --paper-alt: #3D3434;
-  --ink: #FCF2E5;
-  --ink-soft: #D9C9BE;
-  --line: #A8A492;
-  --surface: #483C3C;
+  --paper: #2C3333;
+  --paper-alt: #2E4F4F;
+  --ink: #CBE4DE;
+  --ink-soft: #0E8388;
+  --line: #0E8388;
+  --surface: #2E4F4F;
 
-  --accent: #EC5B38;
-  --accent-ink: #FCF2E5;
-  --accent-tint: rgba(236,91,56,0.16);
-  --gold: #A8A492;
-  --brick: #EC5B38;
+  --accent: #0E8388;
+  --accent-ink: #CBE4DE;
+  --accent-tint: #2E4F4F;
+  --gold: #CBE4DE;
+  --brick: #0E8388;
   --shadow-card: 0 1px 2px rgba(0,0,0,0.28), 0 20px 40px -20px rgba(0,0,0,0.72);
 }
 
@@ -1182,6 +1182,28 @@ ul{ margin:0; padding:0; list-style:none; }
   object-fit: cover;
   object-position: top;
   transition: transform .45s var(--ease);
+}
+
+.wp-project-preview {
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 82%, var(--surface)), var(--accent-tint));
+  color: var(--accent-ink);
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: clamp(24px, 3vw, 38px);
+  line-height: 1.05;
+  letter-spacing: .02em;
+}
+
+.wp-project-preview-label {
+  position: relative;
+  z-index: 1;
+}
+
+.wp-project-preview-label strong {
+  font-size: 1.25em;
 }
 
 .pp-card:hover .pp-media img {
