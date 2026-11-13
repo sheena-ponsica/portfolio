@@ -1,1155 +1,531 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- ================= SEO ================= -->
-<title>Sheena Ponsica — Frontend Developer</title>
-<link rel="icon" type="image/png" href="assets/images/Sheena-Chibi.webp">
-<link rel="apple-touch-icon" href="assets/images/Sheena-Chibi.webp">
-<meta name="description" content="Sheena Ponsica is a Frontend Developer specializing in responsive, pixel-perfect interfaces from Figma, with 4+ years of full-stack experience in HTML5, CSS3, JavaScript, PHP, MySQL and AI-assisted development.">
-<meta name="keywords" content="Sheena Ponsica, Frontend Developer, Web Developer, HTML CSS JavaScript, Figma to code, Vue.js, PHP MySQL, Philippines">
-<meta name="author" content="Sheena Ponsica">
-<link rel="canonical" href="https://sheenaponsica.dev/">
-
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Sheena Ponsica — Frontend Developer">
-<meta property="og:description" content="Frontend Developer building responsive, pixel-perfect web interfaces — HTML5, CSS3, JavaScript, PHP, MySQL, Vue.js, and AI-assisted workflows.">
-<meta property="og:image" content="assets/profile-000.webp">
-<meta property="og:url" content="https://sheenaponsica.dev/">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Sheena Ponsica — Frontend Developer">
-<meta name="twitter:description" content="Frontend Developer specializing in responsive, pixel-perfect interfaces from Figma.">
-<meta name="twitter:image" content="assets/profile-000.webp">
-
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sheena Ponsica is a frontend and web developer in the Philippines, building pixel-perfect interfaces, WordPress solutions, and AI-powered content.">
+  <meta name="author" content="Sheena Ponsica">
+  <meta name="theme-color" content="#080d12">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sheena Ponsica — Frontend Developer">
+  <meta property="og:description" content="Responsive web experiences, pixel-perfect UI, WordPress, and AI content.">
+  <meta property="og:url" content="https://sheenaponsica.dev/">
+  <meta property="og:image" content="assets/images/Sheena-ID.webp">
+  <link rel="canonical" href="https://sheenaponsica.dev/">
+  <link rel="icon" href="assets/images/Sheena-Chibi.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Sheena Ponsica — Frontend Developer</title>
 </head>
-<body>
+<body data-theme="dark">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
 
-<a href="#main" class="skip-link">Skip to content</a>
-
-<!-- ================= HEADER ================= -->
-<header class="site-header">
-  <nav class="nav" aria-label="Primary">
-    <a href="#top" class="brand"><span class="brand-mark"></span> Sheena Ponsica</a>
-
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#personal-projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <div class="nav-actions">
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-        <svg id="themeIcon" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 3v1M12 20v1M4.2 4.2l.7.7M18.4 18.4l.7.7M3 12h1M20 12h1M4.2 19.8l.7-.7M18.4 5.6l.7-.7"/><circle cx="12" cy="12" r="4.5"/></svg>
-      </button>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
-    </div>
-  </nav>
-  <div class="ruler" aria-hidden="true"></div>
-</header>
-
-<main id="main">
-
-  <!-- ================= HERO ================= -->
-  <section class="hero" id="top" style="background:var(--paper-alt);">
-    <div class="hero-grid-bg" aria-hidden="true"></div>
-    <div class="container hero-inner">
-      <div>
-        <div class="hero-coord" aria-hidden="true"><span>X: 24</span><span>Y: 88</span><span>W: auto</span><span>ZOOM: 100%</span></div>
-        <p class="hero-role">WEB DEVELOPER • PIXEL-PERFECT UI • WORDPRESS • AI CONTENT CREATOR</p>
-        <h1>Turning ideas into <span class="accent-word">polished digital</span> experiences.</h1>
-        <p class="lead">I am Sheena Ponsica, I build responsive websites, craft pixel-perfect user interfaces, develop custom WordPress solutions, and create AI-powered content—helping businesses bring their ideas to life with clean code, thoughtful design, and modern technology.</p>
-        <div class="hero-ctas">
-          <a href="assets/attachments/Sheena_Ponsica-RESUME.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer" download>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download Resume
-          </a>
-          <a href="#contact" class="btn btn-outline">Contact Me</a>
-        </div>
-      </div>
-
-      <div class="hero-photo-wrap">
-        <div class="hero-photo">
-          <img src="assets/images/Sheena-Chibi.webp" alt="Portrait of Sheena Ponsica" loading="eager">
-        </div>
-        <div class="hero-photo-corner" aria-hidden="true"></div>
-        <div class="hero-photo-tag"><span class="dot-live"></span> Open to new roles</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= ABOUT ================= -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="section-head reveal">
-        <p class="eyebrow">About</p>
-        <h2>Frontend-focused, full-stack capable.</h2>
-      </div>
-
-      <div class="about-grid">
-        <div class="stat-list reveal">
-          <div class="stat-item"><span class="stat-num">4+</span><span class="stat-label">Years of professional development experience</span></div>
-          <div class="stat-item"><span class="stat-num">2</span><span class="stat-label">Companies — startup &amp; enterprise-scale codebases</span></div>
-          <div class="stat-item"><span class="stat-num">2018</span><span class="stat-label">Started her IT education at Eastern Visayas State University</span></div>
-        </div>
-
-        <div class="about-copy reveal">
-          <p>I am a <strong>Web Developer</strong> with a track record of building responsive, user-friendly web applications, paired with over two years of backend experience supporting full-stack solutions. Proficient in <strong>HTML5, CSS3, JavaScript, jQuery, Bootstrap, and Tailwind CSS</strong>, with working PHP and MySQL skills and practical, project-tested knowledge of <strong>Vue.js</strong>, <strong>React</strong>, and <strong>WordPress</strong>.</p>
-          <p>Strength is translation — turning <strong>Figma designs into pixel-perfect, responsive interfaces</strong>, integrating REST APIs, customizing WordPress themes/plugins, and maintaining large existing codebases without breaking what already works. Contributed to both business-facing dashboards for a staffing solutions company and a large-scale learning platform for an EdTech client, giving a range across corporate tools and consumer products.</p>
-          <p>I also bring a modern edge to my workflow: I use <strong>AI-assisted tools</strong> — GitHub Copilot, Claude, ChatGPT, Open AI, Cursor, Gemini and generative content tools — to speed up development, debugging, documentation, and even marketing content production. I'm looking for a frontend or full-stack role where precision, craftsmanship, and continuous learning are valued.</p>
-          <p>Beyond code, I have hands-on experience as an <strong>AI Content Creator</strong> — producing image and video ads using text-to-image and text-to-video generators, scripting short-form content for Japanese audiences, and editing in CapCut using the Hook–Punch–CTA structure to drive engagement.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= SERVICES ================= -->
-  <section class="section" id="services" style="background:var(--paper-alt);">
-    <div class="container">
-      <div class="section-head reveal">
-        <p class="eyebrow">Services</p>
-        <h2>What I can build for you.</h2>
-        <p>From pixel-perfect interfaces to AI-generated content — here's where I add value.</p>
-      </div>
-
-      <div class="srv-interactive reveal">
-        <!-- Left: menu list -->
-        <nav class="srv-menu" aria-label="Services list">
-          <ul class="srv-list" role="tablist">
-
-            <li class="srv-item active" role="tab" data-panel="sp-0" aria-selected="true" tabindex="0">
-              <span class="srv-item-num">01</span>
-              <div class="srv-item-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-              </div>
-              <span class="srv-item-label">Front-End Development</span>
-            </li>
-
-            <li class="srv-item" role="tab" data-panel="sp-1" aria-selected="false" tabindex="0">
-              <span class="srv-item-num">02</span>
-              <div class="srv-item-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-              </div>
-              <span class="srv-item-label">Website Maintenance &amp; Optimization</span>
-            </li>
-
-            <li class="srv-item" role="tab" data-panel="sp-2" aria-selected="false" tabindex="0">
-              <span class="srv-item-num">03</span>
-              <div class="srv-item-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-              </div>
-              <span class="srv-item-label">API Integration &amp; Backend Support</span>
-            </li>
-
-            <li class="srv-item" role="tab" data-panel="sp-3" aria-selected="false" tabindex="0">
-              <span class="srv-item-num">04</span>
-              <div class="srv-item-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 9h.01M15 9h.01M9 15h.01M15 15h.01M9 9V7a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M9 15v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2M9 9H7a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2M15 9h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2"/></svg>
-              </div>
-              <span class="srv-item-label">AI Content Creation</span>
-            </li>
-
-            <li class="srv-item" role="tab" data-panel="sp-4" aria-selected="false" tabindex="0">
-              <span class="srv-item-num">05</span>
-              <div class="srv-item-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>
-              </div>
-              <span class="srv-item-label">Video Editing</span>
-            </li>
-
-            <li class="srv-item" role="tab" data-panel="sp-5" aria-selected="false" tabindex="0">
-              <span class="srv-item-num">06</span>
-              <div class="srv-item-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 10c1.1-1.5 2.6-2 4-2c1.7 0 3.7.9 4.4 2.6c-.5 1.2-1.2 2.2-2 3"/><path d="M9.5 15.5a3.5 3.5 0 0 1 5 0"/></svg>
-              </div>
-              <span class="srv-item-label">WordPress Development</span>
-            </li>
-
+  <div class="page-shell" id="home">
+    <header class="site-header" id="siteHeader">
+      <nav class="nav-wrap" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Sheena Ponsica, home">
+          <span class="brand-mark" aria-hidden="true">SP</span>
+          <span class="brand-copy"><strong>Sheena Ponsica</strong><small>Frontend Developer</small></span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation menu">
+          <span></span><span></span>
+        </button>
+        <div class="nav-panel" id="primaryNav">
+          <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-        </nav>
-
-        <!-- Right: animated content stage -->
-        <div class="srv-stage">
-          <div class="srv-panel active" id="sp-0" role="tabpanel" aria-labelledby="sp-item-0">
-            <div class="srv-panel-thumb">
-              <img src="assets/images/services/frontend.webp" alt="Front-End Development" loading="lazy">
-            </div>
-            <div class="srv-panel-body">
-              <h3>Front-End Development</h3>
-              <p>Building responsive, production-ready web pages from scratch — clean semantic markup, maintainable CSS, and interactive JavaScript inside real-world codebases.</p>
-            </div>
-          </div>
-
-          <div class="srv-panel" id="sp-1" role="tabpanel" aria-labelledby="sp-item-1">
-            <div class="srv-panel-thumb">
-              <img src="assets/images/services/seo.webp" alt="Website Maintenance &amp; Optimization" loading="lazy">
-            </div>
-            <div class="srv-panel-body">
-              <h3>Website Maintenance &amp; Optimization</h3>
-              <p>Maintaining and improving existing codebases — squashing bugs, refactoring legacy code, tuning performance, and shipping incremental feature work without breaking what's live.</p>
-            </div>
-          </div>
-
-          <div class="srv-panel" id="sp-2" role="tabpanel" aria-labelledby="sp-item-2">
-            <div class="srv-panel-thumb">
-              <img src="assets/images/services/backend.webp" alt="API Integration &amp; Backend Support" loading="lazy">
-            </div>
-            <div class="srv-panel-body">
-              <h3>API Integration &amp; Backend Support</h3>
-              <p>Wiring frontends to REST APIs, handling JSON data flows, building and maintaining PHP/MySQL backend features, and integrating third-party services.</p>
-            </div>
-          </div>
-
-          <div class="srv-panel" id="sp-3" role="tabpanel" aria-labelledby="sp-item-3">
-            <div class="srv-panel-thumb">
-              <img src="assets/images/services/ai_content.webp" alt="AI Content Creation" loading="lazy">
-            </div>
-            <div class="srv-panel-body">
-              <h3>AI Content Creation</h3>
-              <p>Generating targeted marketing assets — images, scripts, and video ads — using AI tools with strategic prompt engineering for specific campaign audiences and objectives.</p>
-            </div>
-          </div>
-
-          <div class="srv-panel" id="sp-4" role="tabpanel" aria-labelledby="sp-item-4">
-            <div class="srv-panel-thumb">
-              <img src="assets/images/services/video_editing.webp" alt="Video Editing" loading="lazy">
-            </div>
-            <div class="srv-panel-body">
-              <h3>Video Editing</h3>
-              <p>Assembling AI-generated and recorded footage into polished short-form videos with music, sound effects, text overlays, and UI elements — optimized for engagement.</p>
-            </div>
-          </div>
-
-          <div class="srv-panel" id="sp-5" role="tabpanel" aria-labelledby="sp-item-5">
-            <div class="srv-panel-thumb">
-              <img src="assets/images/services/wordpress.webp" alt="WordPress Development" loading="lazy">
-            </div>
-            <div class="srv-panel-body">
-              <h3>WordPress Development</h3>
-              <p>Customizing themes, building child themes, and integrating plugins for content-driven websites, landing pages, and small business sites with WordPress and WooCommerce support.</p>
-            </div>
-          </div>
-        </div><!-- /.srv-stage -->
-      </div><!-- /.srv-interactive -->
-    </div>
-  </section>
-
-  <!-- ================= SKILLS ================= -->
-  <section class="section" id="skills">
-    <div class="container">
-      <div class="section-head reveal">
-        <p class="eyebrow">Skills</p>
-        <h2>Technologies I use.</h2>
-        <p>A focused stack of the tools I reach for most often in frontend and full-stack work.</p>
-      </div>
-
-      <div class="skills-strip reveal">
-        <div class="skills-strip-track" aria-label="Technologies I use">
-          <div class="tech-card">
-            <div class="tech-card-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"></div>
-              <span class="tech-card-label">JavaScript</span>
-            </div>
-          <div class="tech-card">
-            <div class="tech-card-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"></div>
-            <span class="tech-card-label">TypeScript</span>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"></div>
-            <span class="tech-card-label">React</span>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"></div>
-            <span class="tech-card-label">HTML5</span>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"></div>
-            <span class="tech-card-label">CSS3</span>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"></div>
-            <span class="tech-card-label">Node.js</span>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"></div>
-            <span class="tech-card-label">MySQL</span>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap"></div>
-            <span class="tech-card-label">Bootstrap</span>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-icon"><img src="https://raw.githubusercontent.com/devicons/devicon/v2.15.1/icons/tailwindcss/tailwindcss-plain.svg" alt="Tailwind CSS"></div>
-            <span class="tech-card-label">Tailwind CSS</span>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"></div>
-            <span class="tech-card-label">PHP</span>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="WordPress"></div>
-            <span class="tech-card-label">WordPress</span>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js"></div>
-            <span class="tech-card-label">Vue.js</span>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" alt="jQuery"></div>
-            <span class="tech-card-label">jQuery</span>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"></div>
-            <span class="tech-card-label">Git</span>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-icon" style="background:linear-gradient(135deg,#0db7ed,#2496ed);">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" loading="lazy">
-            </div>
-            <span class="tech-card-label">Docker</span>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-icon" style="background:linear-gradient(135deg,#6f4e37,#8f5f3b);">
-              <img src="assets/images/icons/sourcetree_icon.webp" alt="Sourcetree icon" loading="lazy">
-            </div>
-            <span class="tech-card-label">Sourcetree</span>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Jira"></div>
-            <span class="tech-card-label">Jira</span>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-icon" style="background:linear-gradient(135deg,#000000,#4a4a4a);">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" alt="Notion" loading="lazy">
-            </div>
-            <span class="tech-card-label">Notion</span>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-icon tech-card-icon-duck">
-              <img src="assets/images/icons/cyberduck_icon.webp" alt="Cyberduck icon" loading="lazy">
-            </div>
-            <span class="tech-card-label">Cyberduck</span>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"></div>
-            <span class="tech-card-label">Figma</span>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-icon tech-card-icon-dark">
-              <img src="assets/images/icons/capcut_icon.svg" alt="CapCut icon" loading="lazy">
-            </div>
-            <span class="tech-card-label">CapCut</span>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-icon tech-card-icon-gradient">
-              <img src="assets/images/icons/canva_icon.svg" alt="Canva icon" loading="lazy">
-            </div>
-            <span class="tech-card-label">Canva</span>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-icon tech-card-icon-red">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4h16v16H4z" fill="rgba(255,255,255,.08)"/><text x="12" y="16" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="800" font-family="Arial,sans-serif" fill="white">A</text></svg>
-            </div>
-            <span class="tech-card-label">Adobe</span>
-          </div>
-          <div class="tech-card">
-            <div class="tech-card-icon tech-card-icon-ai">
-              <img src="assets/images/icons/ai_file_icon.webp" alt="AI file icon" loading="lazy">
-            </div>
-            <span class="tech-card-label">AI</span>
-          </div>
+          <a class="nav-availability" href="#contact"><span></span> Available for work</a>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= EXPERIENCE ================= -->
-  <section class="section" id="experience" style="background:var(--paper-alt);">
-    <div class="container">
-      <div class="section-head reveal">
-        <p class="eyebrow">Experience</p>
-        <h2>Where the work happened.</h2>
-      </div>
-
-      <div class="timeline">
-
-        <div class="timeline-item current reveal">
-          <span class="timeline-dot" aria-hidden="true"></span>
-          <div class="tl-card">
-            <div class="tl-head">
-              <div>
-                <div class="tl-role">AI Content Creator</div>
-                <div class="tl-meta"><b>Forty Degrees Celsius Inc.</b> · Cebu City</div>
-              </div>
-              <span class="tl-date">May 2026 — Jul 2026</span>
-            </div>
-            <ul class="tl-list">
-              <li>Developed AI-generated marketing materials — images, audio, and video ads — improving content production efficiency.</li>
-              <li>Wrote effective prompts for text-to-video and text-to-image generators to produce visual assets for specific campaigns.</li>
-              <li>Brainstormed and scripted short, engaging video content (e.g., 10-second clips) tailored to a Japanese audience to promote NativeCamp.</li>
-              <li>Edited video in CapCut, assembling AI-generated footage with music, sound effects, text overlays, and UI elements.</li>
-              <li>Produced content variants — changing setting, time of day, or greetings — to maximize ad performance.</li>
-              <li>Applied the Hook–Punch–CTA structure to maximize viewer retention and engagement.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <span class="timeline-dot" aria-hidden="true"></span>
-          <div class="tl-card">
-            <div class="tl-head">
-              <div>
-                <div class="tl-role">Frontend Developer</div>
-                <div class="tl-meta"><b>Forty Degrees Celsius Inc.</b> · Cebu City</div>
-              </div>
-              <span class="tl-date">Mar 2024 — May 2026</span>
-            </div>
-            <ul class="tl-list">
-              <li>Developed responsive web pages and landing pages for NativeCamp, spanning user-facing features and corporate websites.</li>
-              <li>Converted Figma designs into pixel-perfect, responsive interfaces using HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS.</li>
-              <li>Created and maintained large volumes of interactive textbook and learning materials for the platform.</li>
-              <li>Worked within an MVC-based codebase, shipping new features while preserving existing functionality.</li>
-              <li>Used PerfectPixel and design specifications to ensure accurate, faithful implementation of UI/UX designs.</li>
-              <li>Managed development tasks and progress with Jira and Notion in an Agile team environment.</li>
-              <li>Applied AI tools to generate Git documentation and streamline development workflows.</li>
-              <li>Troubleshot, debugged, and optimized performance while growing into a large enterprise codebase.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <span class="timeline-dot" aria-hidden="true"></span>
-          <div class="tl-card">
-            <div class="tl-head">
-              <div>
-                <div class="tl-role">Website Developer</div>
-                <div class="tl-meta"><b>Virtual Staffing Solutions</b> · Ormoc City</div>
-              </div>
-              <span class="tl-date">May 2022 — Feb 2024</span>
-            </div>
-            <ul class="tl-list">
-              <li>Developed and maintained responsive, user-friendly websites using HTML, CSS, JavaScript, Bootstrap , MySQL and PHP.</li>
-              <li>Implemented secure authentication and user access features.</li>
-              <li>Built dashboards, reports, and data management tools that supported business insight and decision-making.</li>
-              <li>Improved data accessibility through organized cataloging and reporting solutions.</li>
-              <li>Integrated frontend applications with backend services through REST APIs and JSON.</li>
-              <li>Enhanced existing websites by improving design, functionality, performance, and user experience.</li>
-              <li>Participated in code reviews, debugging, and troubleshooting to keep code quality and maintainability high.</li>
-              <li>Resolved technical issues and escalated helpdesk tickets while providing consistently strong client support.</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= FEATURED WORK ================= -->
-  <section class="section" id="work">
-    <div class="container">
-      <div class="section-head reveal">
-        <p class="eyebrow">Featured Work</p>
-        <h2>Projects across two companies.</h2>
-        <p>Select a company below to browse the work I shipped there.</p>
-      </div>
-
-      <div class="work-carousel">
-
-        <!-- ── Company tab switcher ── -->
-        <div class="work-tab-bar reveal" role="tablist" aria-label="Select company">
-
-          <button class="work-tab active" role="tab" id="tab-nc"
-                  aria-controls="panel-nc" aria-selected="true" data-panel="nc">
-            <span class="wtab-num">01</span>
-            <div class="wtab-body">
-              <span class="wtab-company">NativeCamp</span>
-              <span class="wtab-role">Frontend Developer &amp; AI Content Creator</span>
-              <span class="wtab-period">Mar 2024 — Jul 2026</span>
-            </div>
-            <svg class="wtab-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme" aria-pressed="false" title="Switch to light theme">
+            <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="3.7"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+            <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.2 15.1A8.4 8.4 0 0 1 8.9 3.8 8.8 8.8 0 1 0 20.2 15.1Z"></path></svg>
+            <span class="theme-label">Light mode</span>
           </button>
-
-          <button class="work-tab" role="tab" id="tab-vss"
-                  aria-controls="panel-vss" aria-selected="false" data-panel="vss">
-            <span class="wtab-num">02</span>
-            <div class="wtab-body">
-              <span class="wtab-company">Virtual Staffing Solutions</span>
-              <span class="wtab-role">Website Developer</span>
-              <span class="wtab-period">May 2022 — Feb 2024</span>
-            </div>
-            <svg class="wtab-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          </button>
-
-        </div><!-- /.work-tab-bar -->
-
-        <!-- ── Panels ── -->
-        <div class="work-panel-wrap">
-
-          <div class="work-panel active" id="panel-nc" role="tabpanel" aria-labelledby="tab-nc">
-            <p class="work-intro">A selection of pages I built and maintains on the NativeCamp platform as a Frontend Developer — converting Figma designs into responsive, production HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS within a large MVC codebase.</p>
-            <div class="slider-wrap">
-            <div class="work-grid js-slider">
-
-              <div class="work-card bracket-card">
-                <div class="work-thumb">
-                  <span class="work-num">01</span>
-                  <img src="assets/images/works/corporate_landing_page.webp" alt="Screenshot of the NativeCamp corporate landing page" loading="lazy" class="lightbox-trigger">
-                </div>
-                <div class="work-body">
-                  <h3>Corporate Landing Page</h3>
-                  <p>The corporate-facing entry point for businesses evaluating NativeCamp's English training programs for employees — plans, pricing, and case studies in one responsive page.</p>
-                  <div class="work-foot">
-                    <span class="work-role">Frontend Developer</span>
-                    <a class="link-btn" href="https://nativecamp.net/corporate" target="_blank" rel="noopener">
-                      Visit site
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="work-card bracket-card">
-                <div class="work-thumb">
-                  <span class="work-num">02</span>
-                  <img src="assets/images/works/ai_content_creation.webp" alt="Screenshot of AI-generated campaign content for NativeCamp Japan" loading="lazy" class="lightbox-trigger">
-                </div>
-                <div class="work-body">
-                  <h3>AI-Generated Campaign Content for NativeCamp Japan</h3>
-                  <p>Created AI-generated campaign content for NativeCamp Japan, including video and image ads tailored to the Japanese market.</p>
-                  <div class="work-foot">
-                    <span class="work-role">AI Content Creator</span>
-                    <a class="link-btn" href="https://fb.me/adspreview/facebook/22qnOCjsc5l6Ovb" target="_blank" rel="noopener">
-                      Visit site
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="work-card bracket-card">
-                <div class="work-thumb">
-                  <span class="work-num">03</span>
-                  <img src="assets/images/works/Nativecamp-overseas-lp.webp" alt="Screenshot of the NativeCamp Traditional Chinese landing page for Taiwan" loading="lazy" class="lightbox-trigger">
-                </div>
-                <div class="work-body">
-                  <h3>NativeCamp Taiwan — Traditional Chinese Landing Page</h3>
-                  <p>A localised landing page for the Traditional Chinese (Taiwan) market, walking prospective students through NativeCamp's 3-step onboarding flow. Built with <strong>Tailwind CSS</strong> for a utility-first, responsive layout — a modern departure from the Bootstrap-based codebase used across other platform pages.</p>
-                  <div class="work-foot">
-                    <span class="work-role">Frontend Developer</span>
-                    <a class="link-btn" href="https://nativecamp.net/zh-tw" target="_blank" rel="noopener">
-                      Visit site
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="work-card bracket-card">
-                <div class="work-thumb">
-                  <span class="work-num">04</span>
-                  <img src="assets/images/works/kids_landing_page.webp" alt="Screenshot of the NativeCamp Kids landing page" loading="lazy" class="lightbox-trigger">
-                </div>
-                <div class="work-body">
-                  <h3>NativeCamp Kids Landing Page</h3>
-                  <p>A dedicated, family-friendly landing page introducing NativeCamp's English lessons for children, with a lighter tone and layout tailored to parents.</p>
-                  <div class="work-foot">
-                    <span class="work-role">Frontend Developer</span>
-                    <a class="link-btn" href="https://nativecamp.net/kids" target="_blank" rel="noopener">
-                      Visit site
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="work-card bracket-card">
-                <div class="work-thumb">
-                  <span class="work-num">05</span>
-                  <img src="assets/images/works/registration_page.webp" alt="Screenshot of the NativeCamp registration/sign-up page" loading="lazy" class="lightbox-trigger">
-                </div>
-                <div class="work-body">
-                  <h3>Account Registration Flow</h3>
-                  <p>The sign-up page new students use to create a NativeCamp account — a conversion-critical form built for clarity, validation, and cross-browser reliability.</p>
-                  <div class="work-foot">
-                    <span class="work-role">Frontend Developer</span>
-                    <a class="link-btn" href="https://nativecamp.net/register" target="_blank" rel="noopener">
-                      Visit site
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="work-card bracket-card">
-                <div class="work-thumb">
-                  <span class="work-num">06</span>
-                  <img src="assets/images/works/sitemap_page.webp" alt="Screenshot of the NativeCamp study abroad sitemap page" loading="lazy" class="lightbox-trigger">
-                </div>
-                <div class="work-body">
-                  <h3>Study Abroad Sitemap</h3>
-                  <p>A structured navigation page indexing every study-abroad destination and resource, helping visitors and search engines find their way through the section.</p>
-                  <div class="work-foot">
-                    <span class="work-role">Frontend Developer</span>
-                    <a class="link-btn" href="https://nativecamp.net/study_abroad/sitemap" target="_blank" rel="noopener">
-                      Visit site
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="work-card bracket-card">
-                <div class="work-thumb">
-                  <span class="work-num">07</span>
-                  <img src="assets/images/works/textbook.webp" alt="Screenshot of an interactive NativeCamp textbook lesson page" loading="lazy" class="lightbox-trigger">
-                </div>
-                <div class="work-body">
-                  <h3>Interactive Textbook Page</h3>
-                  <p>One page from the large library of interactive textbook and learning materials she built and maintained — structured lesson content rendered for in-browser study.</p>
-                  <div class="work-foot">
-                    <span class="work-role">Frontend Developer</span>
-                    <a class="link-btn" href="https://nativecamp.net/textbook/page-detail/2/26145" target="_blank" rel="noopener">
-                      Visit site
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="work-card bracket-card">
-                <div class="work-thumb">
-                  <span class="work-num">08</span>
-                  <img src="assets/images/works/usage_pages.webp" alt="Screenshot of the NativeCamp usage / how-to guide page" loading="lazy" class="lightbox-trigger">
-                </div>
-                <div class="work-body">
-                  <h3>Usage &amp; How-To Guide</h3>
-                  <p>A support-facing guide walking students through how to book, join, and get the most out of their lessons — built for clarity across devices.</p>
-                  <div class="work-foot">
-                    <span class="work-role">Frontend Developer</span>
-                    <a class="link-btn" href="https://nativecamp.net/usage" target="_blank" rel="noopener">
-                      Visit site
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="work-card bracket-card">
-                <div class="work-thumb">
-                  <span class="work-num">09</span>
-                  <img src="assets/images/works/dumaguete_page.webp" alt="Screenshot of the NativeCamp Dumaguete, Philippines study abroad page" loading="lazy" class="lightbox-trigger">
-                </div>
-                <div class="work-body">
-                  <h3>Dumaguete, Philippines — Destination Page</h3>
-                  <p>A destination-specific study-abroad page for Dumaguete, presenting the local school, program details, and living costs to prospective international students.</p>
-                  <div class="work-foot">
-                    <span class="work-role">Frontend Developer</span>
-                    <a class="link-btn" href="https://nativecamp.net/study_abroad/countries/philippines-dumaguete" target="_blank" rel="noopener">
-                      Visit site
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="work-card bracket-card">
-                <div class="work-thumb">
-                  <span class="work-num">10</span>
-                  <img src="assets/images/works/study_abroad_sections.webp" alt="Screenshot of the NativeCamp study abroad hub page" loading="lazy" class="lightbox-trigger">
-                </div>
-                <div class="work-body">
-                  <h3>Study Abroad Hub</h3>
-                  <p>The main landing page for NativeCamp's study-abroad program, guiding prospective students through destinations, program types, and next steps.</p>
-                  <div class="work-foot">
-                    <span class="work-role">Frontend Developer</span>
-                    <a class="link-btn" href="https://nativecamp.net/study_abroad" target="_blank" rel="noopener">
-                      Visit site
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="work-card bracket-card">
-                <div class="work-thumb">
-                  <span class="work-num">11</span>
-                  <div class="work-video-wrap">
-                    <video src="assets/videos/Gion-Matsuri-Square.mov" preload="metadata" playsinline loop></video>
-                    <div class="work-video-play" aria-label="Play video">
-                      <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.6)" stroke-width="1.5"/><polygon points="10,8 17,12 10,16" fill="white"/></svg>
-                    </div>
-                  </div>
-                </div>
-                <div class="work-body">
-                  <h3>Gion Matsuri — AI Video Ad</h3>
-                  <p>AI-generated video ad set against Kyoto's iconic Gion Matsuri festival, scripted and produced with text-to-video tools for the Japanese market to promote NativeCamp.</p>
-                  <div class="work-foot">
-                    <span class="work-role">AI Content Creator</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="work-card bracket-card">
-                <div class="work-thumb">
-                  <span class="work-num">12</span>
-                  <div class="work-video-wrap">
-                    <video src="assets/videos/Restau-Convo-Square.mov" preload="metadata" playsinline loop></video>
-                    <div class="work-video-play" aria-label="Play video">
-                      <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.6)" stroke-width="1.5"/><polygon points="10,8 17,12 10,16" fill="white"/></svg>
-                    </div>
-                  </div>
-                </div>
-                <div class="work-body">
-                  <h3>Restaurant Scene — AI Video Ad</h3>
-                  <p>AI-generated video ad featuring a casual restaurant conversation scenario, crafted with text-to-video generation and edited for short-form delivery to a Japanese audience.</p>
-                  <div class="work-foot">
-                    <span class="work-role">AI Content Creator</span>
-                  </div>
-                </div>
-              </div>
-
-            </div><!-- /.work-grid -->
-            <div class="slider-controls">
-              <div class="slider-dots js-dots"></div>
-              <div class="slider-arrows">
-                <button class="slider-btn slider-prev" aria-label="Previous slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg></button>
-                <button class="slider-btn slider-next" aria-label="Next slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
-              </div>
-            </div>
-            </div><!-- /.slider-wrap -->
-          </div><!-- /#panel-nc -->
-
-          <div class="work-panel" id="panel-vss" role="tabpanel" aria-labelledby="tab-vss">
-            <p class="work-intro">A selection of pages I built and maintained on the Virtual Staffing Solutions platform as a Web Developer — creating several websites, dashboards and web applications to enhance the company's online presence.</p>
-            <div class="slider-wrap">
-            <div class="work-grid js-slider">
-
-              <div class="work-card bracket-card">
-                <div class="work-thumb">
-                  <span class="work-num">01</span>
-                  <img src="assets/images/works/vss_dashboard.webp" alt="Screenshot of Virtual Staffing Solutions dashboard" loading="lazy" class="lightbox-trigger">
-                </div>
-                <div class="work-body">
-                  <h3>Virtual Staffing Solutions Dashboard</h3>
-                  <p>Developed a comprehensive dashboard for Virtual Staffing Solutions, enabling efficient management of staffing operations and data visualization.</p>
-                  <div class="work-foot">
-                    <span class="work-role">Web Developer</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="work-card bracket-card">
-                <div class="work-thumb">
-                  <span class="work-num">02</span>
-                  <img src="assets/images/works/vss_academy_website.webp" alt="Screenshot of Virtual Staffing Solutions Academy website" loading="lazy" class="lightbox-trigger">
-                </div>
-                <div class="work-body">
-                  <h3>Virtual Staffing Solutions Academy Website</h3>
-                  <p>Developed the official website for Virtual Staffing Solutions Academy, providing information about courses, faculty, and enrollment procedures for BPO.</p>
-                  <div class="work-foot">
-                    <span class="work-role">Web Developer</span>
-                  </div>
-                </div>
-              </div>
-
-            </div><!-- /.work-grid -->
-            <div class="slider-controls">
-              <div class="slider-dots js-dots"></div>
-              <div class="slider-arrows">
-                <button class="slider-btn slider-prev" aria-label="Previous slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg></button>
-                <button class="slider-btn slider-next" aria-label="Next slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
-              </div>
-            </div>
-            </div><!-- /.slider-wrap -->
-          </div><!-- /#panel-vss -->
-
-        </div><!-- /.work-panel-wrap -->
-      </div><!-- /.work-carousel -->
-    </div><!-- /.container -->
-  </section>
-
-  <!-- ================= PERSONAL PROJECTS ================= -->
-  <section class="section personal-projects" id="personal-projects" style="background:var(--paper-alt);">
-    <div class="container">
-      <div class="section-head reveal">
-        <p class="eyebrow">Personal Projects</p>
-        <h2>Brew &amp; Crust — from storefront to operations (built with React).</h2>
-        <p>Built using React with reusable components, React Router, state management patterns, and responsive UI architecture for storefront, admin dashboard, and POS workflows.</p>
-      </div>
-
-      <div class="pp-carousel reveal" aria-label="Personal projects carousel">
-        <div class="pp-viewport">
-          <div class="pp-track">
-        <article class="pp-card bracket-card">
-          <div class="pp-media">
-            <img src="assets/images/projects/brew-and-crust_landing-page.webp" alt="Brew and Crust storefront landing page" loading="lazy" class="lightbox-trigger">
-          </div>
-          <div class="pp-body">
-            <div class="pp-meta-row">
-              <span class="pp-chip">Customer View</span>
-              <span class="pp-chip pp-chip-soft">Responsive UI</span>
-            </div>
-            <h3>Brew &amp; Crust Storefront</h3>
-            <p>A polished coffee shop website focused on strong product storytelling, clear CTAs, and fast mobile browsing.</p>
-            <div class="pp-actions">
-              <a class="link-btn" href="https://brew-and-crust.vercel.app/" target="_blank" rel="noopener">Open Project
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="pp-card bracket-card">
-          <div class="pp-media">
-            <img src="assets/images/projects/brew-and-crust_admin-dashboard.webp" alt="Brew and Crust admin dashboard" loading="lazy" class="lightbox-trigger">
-          </div>
-          <div class="pp-body">
-            <div class="pp-meta-row">
-              <span class="pp-chip">Admin Panel</span>
-              <span class="pp-chip pp-chip-soft">Analytics</span>
-            </div>
-            <h3>Operations Dashboard</h3>
-            <p>Centralized controls for orders, products, inventory status, and store-level business visibility.</p>
-            <div class="pp-actions">
-              <a class="link-btn" href="https://brew-and-crust.vercel.app/admin" target="_blank" rel="noopener">Open Admin
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="pp-card bracket-card">
-          <div class="pp-media">
-            <img src="assets/images/projects/brew-and-crust_pos.webp" alt="Brew and Crust point-of-sale screen" loading="lazy" class="lightbox-trigger">
-          </div>
-          <div class="pp-body">
-            <div class="pp-meta-row">
-              <span class="pp-chip">POS</span>
-              <span class="pp-chip pp-chip-soft">Counter Flow</span>
-            </div>
-            <h3>Point of Sale Interface</h3>
-            <p>Fast cashier workflow with category filtering, order assembly, and split-payment checkout actions.</p>
-            <div class="pp-actions">
-              <a class="link-btn" href="https://brew-and-crust.vercel.app/pos" target="_blank" rel="noopener">Open POS
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-          </div>
         </div>
-        <div class="pp-nav" aria-label="Project slide indicators">
-          <div class="pp-dots" aria-label="Project slides"></div>
-        </div>
-      </div>
+      </nav>
+    </header>
 
-      <div class="pp-separator reveal" aria-hidden="true"></div>
-
-      <div class="pp-group-head reveal" aria-label="Calculator utilities project description">
-        <h3>Calculator Utilities.</h3>
-        <p>Standalone financial tools built for everyday Philippine payroll and loan needs — no framework dependencies, fast to load, and practical for local users.</p>
-      </div>
-
-      <div class="pp-single pp-duo-grid reveal" aria-label="Calculator utility projects">
-        <article class="pp-card pp-card-single bracket-card">
-          <div class="pp-media">
-            <img src="assets/images/projects/13-month-calculator.webp" alt="13th Month Calculator application interface" loading="lazy" class="lightbox-trigger">
-          </div>
-          <div class="pp-body">
-            <div class="pp-meta-row">
-              <span class="pp-chip">Utility App</span>
-              <span class="pp-chip pp-chip-soft">No Framework Build Required</span>
+    <main id="main">
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+        <div class="hero-inner">
+          <div class="hero-portrait" data-reveal style="--delay: 80ms">
+            <div class="portrait-frame">
+              <img src="assets/images/Sheena-ID.webp" alt="Sheena Ponsica" fetchpriority="high">
+              <span class="portrait-corner portrait-corner-tl" aria-hidden="true"></span>
+              <span class="portrait-corner portrait-corner-br" aria-hidden="true"></span>
             </div>
-            <h3>13th Month Pay Calculator</h3>
-            <p>A focused payroll utility that computes 13th month estimates, deductions, and take-home totals with a festive interface and practical guidance for local users.</p>
-            <div class="pp-actions">
-              <a class="link-btn" href="https://sheena-13th-month-calculator.vercel.app/" target="_blank" rel="noopener">Open Project
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+            <div class="portrait-caption"><span class="live-dot"></span> Open to new roles</div>
+            <div class="tech-orbit" aria-label="Technologies and design tools">
+              <svg class="orbit-path" viewBox="0 0 210 500" fill="none" aria-hidden="true">
+                <path d="M25 14C198 77 194 153 85 229C-18 300 18 417 183 486" pathLength="1"></path>
+              </svg>
+              <ul class="orbit-badges">
+                <li class="orbit-badge badge-pen" style="--i:0"><span aria-hidden="true">✦</span><span class="tooltip">UI Design</span></li>
+                <li class="orbit-badge badge-html" style="--i:1"><b>5</b><span class="tooltip">HTML5</span></li>
+                <li class="orbit-badge badge-css" style="--i:2"><b>#</b><span class="tooltip">CSS3</span></li>
+                <li class="orbit-badge badge-js" style="--i:3"><b>JS</b><span class="tooltip">JavaScript</span></li>
+                <li class="orbit-badge badge-react" style="--i:4"><b>⚛</b><span class="tooltip">React</span></li>
+                <li class="orbit-badge badge-tailwind" style="--i:5"><b>≋</b><span class="tooltip">Tailwind CSS</span></li>
+                <li class="orbit-badge badge-wordpress" style="--i:6"><b>W</b><span class="tooltip">WordPress</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="hero-content">
+            <p class="eyebrow hero-eyebrow" data-reveal style="--delay: 140ms">WEB DEVELOPER <i>•</i> PIXEL-PERFECT UI <i>•</i> WORDPRESS <i>•</i> AI CONTENT CREATOR</p>
+            <h1 id="heroTitle" data-reveal style="--delay: 220ms">Hi, I’m <span>Sheena Ponsica</span><br><em>Turning ideas into polished digital experiences.</em></h1>
+            <p class="hero-intro" data-reveal style="--delay: 300ms">I build responsive websites, craft pixel-perfect user interfaces, develop custom WordPress solutions, and create AI-powered content — helping businesses bring ideas to life with clean code, thoughtful design, and modern technology.</p>
+            <p class="hero-role" data-reveal style="--delay: 360ms">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 19 6v5c0 4.5-2.9 7.7-7 10-4.1-2.3-7-5.5-7-10V6l7-3Z" stroke="currentColor" stroke-width="1.6"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Frontend Developer <span>·</span> WordPress Developer <span>·</span> UI Implementer
+            </p>
+            <div class="hero-facts" data-reveal style="--delay: 480ms">
+              <a class="fact-card tilt-card" href="#about"><span class="fact-label">Location</span><strong>Ormoc City, Leyte, Philippines</strong><span class="fact-icon" aria-hidden="true">⌖</span></a>
+              <a class="fact-card tilt-card" href="#skills"><span class="fact-label">Expertise</span><strong>Pixel-perfect UI<br>&amp; WordPress</strong><span class="fact-icon" aria-hidden="true">✳</span></a>
+              <a class="fact-card tilt-card" href="#about"><span class="fact-label">Experience</span><strong>4+ years in development</strong><span class="fact-icon" aria-hidden="true">↗</span></a>
+            </div>
+            <div class="hero-actions" data-reveal style="--delay: 540ms">
+              <a class="button button-primary magnetic" href="/assets/attachments/Sheena-Ponsica-Resume.pdf" download>
+                Download Resume <span aria-hidden="true">↓</span>
               </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="pp-card pp-card-single bracket-card">
-          <div class="pp-media">
-            <img src="assets/images/projects/loan-calculator.webp" alt="Philippine Loan Calculator application interface" loading="lazy" class="lightbox-trigger">
-          </div>
-          <div class="pp-body">
-            <div class="pp-meta-row">
-              <span class="pp-chip">Utility App</span>
-              <span class="pp-chip pp-chip-soft">PH Finance</span>
-            </div>
-            <h3>Loan Calculator</h3>
-            <p>An interactive loan estimator modeled on major Philippine banks and government lenders — covering personal, home, car, and business loans with monthly payment breakdowns, interest summaries, and eligibility checks.</p>
-            <div class="pp-actions">
-              <a class="link-btn" href="https://sheena-loan-calculator.vercel.app/" target="_blank" rel="noopener">Open Project
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="pp-separator reveal" aria-hidden="true"></div>
-
-      <div class="pp-group-head reveal" aria-label="WordPress project description">
-        <h3>WordPress Projects.</h3>
-        <p>Custom WordPress websites built for personal brands, community storytelling, and polished, easy-to-navigate content experiences.</p>
-      </div>
-
-      <div class="pp-single pp-trio-grid reveal" aria-label="WordPress projects">
-        <article class="pp-card pp-card-single bracket-card">
-          <div class="pp-media">
-            <img src="assets/images/projects/akyat-ng-mga-gastador.webp" alt="Akyat ng Mga Gastador WordPress website preview" loading="lazy" class="lightbox-trigger">
-          </div>
-          <div class="pp-body">
-            <div class="pp-meta-row">
-              <span class="pp-chip">WordPress</span>
-              <span class="pp-chip pp-chip-soft">Custom Website</span>
-            </div>
-            <h3>Akyat ng mga Gastador</h3>
-            <p>A content-driven WordPress website designed for a lifestyle-focused brand, combining a clean layout with engaging sections for updates, stories, and audience connection.</p>
-            <div class="pp-actions">
-              <a class="link-btn" href="https://akyat-ng-mga-gastador.infinityfree.io/" target="_blank" rel="noopener">Open Project
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="pp-card pp-card-single bracket-card">
-          <div class="pp-media" aria-label="Sheena Ponsica portfolio WordPress and Elementor preview">
-            <img src="assets/images/works/elementor-porfolio.webp" alt="Sheena Ponsica portfolio built with WordPress and Elementor" loading="lazy" class="lightbox-trigger">
-          </div>
-          <div class="pp-body">
-            <div class="pp-meta-row">
-              <span class="pp-chip">WordPress</span>
-              <span class="pp-chip pp-chip-soft">Elementor</span>
-            </div>
-            <h3>Sheena Ponsica Portfolio</h3>
-            <p>My personal portfolio built with WordPress and Elementor, bringing together my development work, creative projects, experience, and services in one responsive website.</p>
-            <div class="pp-actions">
-              <a class="link-btn" href="https://elementor-web.infinityfree.io/" target="_blank" rel="noopener">View Portfolio
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="pp-card pp-card-single bracket-card">
-          <div class="pp-media">
-            <img src="assets/images/projects/adventure-wall.webp" alt="Adventure Wall WordPress website preview" loading="lazy" class="lightbox-trigger">
-          </div>
-          <div class="pp-body">
-            <div class="pp-meta-row">
-              <span class="pp-chip">WordPress</span>
-              <span class="pp-chip pp-chip-soft">Community Website</span>
-            </div>
-            <h3>Adventure Wall</h3>
-            <p>A story-sharing community website where travelers can pin memorable adventures, browse personal stories, and connect through a warm, illustrated experience.</p>
-            <div class="pp-actions">
-              <a class="link-btn" href="https://adventure-wall.netlify.app/" target="_blank" rel="noopener">Open Project
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ================= EDUCATION ================= -->
-  <section class="section" id="education">
-    <div class="container">
-      <div class="section-head reveal">
-        <p class="eyebrow">Education</p>
-        <h2>Academic background.</h2>
-      </div>
-
-      <div class="edu-grid">
-        <div class="edu-card bracket-card reveal">
-          <div class="edu-year">2018 — 2022</div>
-          <h3>Bachelor of Science in Information Technology</h3>
-          <div class="edu-school">Eastern Visayas State University</div>
-          <div class="edu-tags">
-            <div class="edu-tag">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15l-8-4.5L12 6l8 4.5-8 4.5z"/><path d="M6 12.5V17c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-4.5"/></svg>
-              Academic Achiever
+              <a class="button button-quiet magnetic" href="#contact">Contact Me <span aria-hidden="true">↗</span></a>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="edu-card bracket-card reveal">
-          <div class="edu-year">2016 — 2018</div>
-          <h3>TVL — Information, Communications &amp; Technology</h3>
-          <div class="edu-school">Western Leyte College of Ormoc City, Inc.</div>
-          <div class="edu-tags">
-            <div class="edu-tag">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15l-8-4.5L12 6l8 4.5-8 4.5z"/><path d="M6 12.5V17c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-4.5"/></svg>
-              Academic Excellence Awardee
+      <section class="section about-section" id="about" aria-labelledby="aboutTitle">
+        <div class="section-wrap">
+          <header class="section-heading" data-reveal>
+            <p class="eyebrow">A little about me</p>
+            <h2 id="aboutTitle">Frontend-focused.<br><span>Full-stack capable.</span></h2>
+          </header>
+          <div class="about-layout">
+            <div class="timeline" id="careerTimeline" aria-label="Education and career timeline" data-reveal>
+              <div class="timeline-rail" aria-hidden="true"><span></span></div>
+              <article class="timeline-item">
+                <span class="timeline-dot" aria-hidden="true"></span>
+                <p class="timeline-date">2018 — 2022</p>
+                <h3>Information Technology</h3>
+                <p>Started IT at Eastern Visayas State University in 2018.</p>
+                <details class="timeline-more">
+                  <summary>Education details</summary>
+                  <p>Bachelor of Science in Information Technology, Eastern Visayas State University. Academic Achiever.</p>
+                  <p>TVL — Information, Communications &amp; Technology, Western Leyte College of Ormoc City, Inc. (2016–2018); Academic Excellence Awardee and School Publication Organization Feature Writing Awardee.</p>
+                </details>
+              </article>
+              <article class="timeline-item">
+                <span class="timeline-dot" aria-hidden="true"></span>
+                <p class="timeline-date">May 2022 — Feb 2024</p>
+                <h3>Virtual Staffing Solutions</h3>
+                <p>Website Developer · Ormoc City</p>
+                <details class="timeline-more">
+                  <summary>Professional experience</summary>
+                  <ul>
+                    <li>Developed and maintained responsive, user-friendly websites using HTML, CSS, JavaScript, Bootstrap, MySQL, and PHP.</li>
+                    <li>Implemented secure authentication and user access features.</li>
+                    <li>Built dashboards, reports, and data management tools that supported business insight and decision-making.</li>
+                    <li>Improved data accessibility through organized cataloging and reporting solutions.</li>
+                    <li>Integrated frontend applications with backend services through REST APIs and JSON.</li>
+                    <li>Enhanced existing websites by improving design, functionality, performance, and user experience.</li>
+                    <li>Participated in code reviews, debugging, and troubleshooting to keep code quality and maintainability high.</li>
+                    <li>Resolved technical issues and escalated helpdesk tickets while providing client support.</li>
+                  </ul>
+                </details>
+              </article>
+              <article class="timeline-item">
+                <span class="timeline-dot" aria-hidden="true"></span>
+                <p class="timeline-date">Mar 2024 — May 2026</p>
+                <h3>Forty Degrees Celsius Inc.</h3>
+                <p>Frontend Developer · Cebu City</p>
+                <details class="timeline-more">
+                  <summary>Professional experience</summary>
+                  <ul>
+                    <li>Developed responsive web pages and landing pages for NativeCamp, spanning user-facing features and corporate websites.</li>
+                    <li>Converted Figma designs into pixel-perfect, responsive interfaces using HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS.</li>
+                    <li>Created and maintained large volumes of interactive textbook and learning materials for the platform.</li>
+                    <li>Worked within an MVC-based codebase, shipping new features while preserving existing functionality.</li>
+                    <li>Used PerfectPixel and design specifications to ensure accurate, faithful implementation of UI/UX designs.</li>
+                    <li>Managed development tasks and progress with Jira and Notion in an Agile team environment.</li>
+                    <li>Applied AI tools to generate Git documentation and streamline development workflows.</li>
+                    <li>Troubleshot, debugged, and optimized performance while growing into a large enterprise codebase.</li>
+                  </ul>
+                </details>
+              </article>
+              <article class="timeline-item">
+                <span class="timeline-dot" aria-hidden="true"></span>
+                <p class="timeline-date">May 2026 — Jul 2026</p>
+                <h3>AI Content Creator</h3>
+                <p>Forty Degrees Celsius Inc. · Cebu City</p>
+                <details class="timeline-more">
+                  <summary>Professional experience</summary>
+                  <ul>
+                    <li>Developed AI-generated marketing images, audio, and video ads.</li>
+                    <li>Wrote prompts for text-to-video and text-to-image tools for campaign assets.</li>
+                    <li>Scripted short video content for a Japanese audience to promote NativeCamp.</li>
+                    <li>Edited in CapCut with music, sound effects, text overlays, and UI elements.</li>
+                    <li>Produced variations in settings, times, and greetings for campaign testing.</li>
+                    <li>Used Hook–Punch–CTA structure to support viewer retention and engagement.</li>
+                  </ul>
+                </details>
+              </article>
+              <article class="timeline-item">
+                <span class="timeline-dot timeline-dot-open" aria-hidden="true"></span>
+                <p class="timeline-date">Currently</p>
+                <h3>Open to new roles</h3>
+                <p>Frontend and full-stack opportunities.</p>
+              </article>
             </div>
-            <div class="edu-tag">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15l-8-4.5L12 6l8 4.5-8 4.5z"/><path d="M6 12.5V17c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-4.5"/></svg>
-              School Publication Organization Awardee — Feature Writing
+
+            <div class="about-copy" data-reveal style="--delay: 100ms">
+              <p class="eyebrow">How I work</p>
+              <p class="about-lead">I build responsive, user-friendly web apps, with <strong>2+ years of backend support</strong> behind my frontend work.</p>
+              <p>My strength is translation: turning <span class="inline-chip">Figma</span> designs into pixel-perfect responsive UI, connecting <span class="inline-chip">REST APIs</span>, developing <span class="inline-chip">WordPress</span> themes and plugins, and maintaining large existing codebases without losing the details that already work.</p>
+              <p>I’ve contributed to business dashboards for a staffing company and a large learning platform for an EdTech client. I use <span class="inline-chip">AI-assisted tools</span> — GitHub Copilot, Claude, ChatGPT, Cursor, and Gemini — for development, debugging, documentation, and content.</p>
+              <p>Beyond code, I create AI image and video ads, write short-form scripts for Japanese audiences, and edit in CapCut with a Hook–Punch–CTA structure.</p>
+              <div class="currently-pill"><span class="live-dot"></span> Currently open to frontend and full-stack roles</div>
+              <div class="stat-grid" aria-label="Career highlights">
+                <div class="stat-card tilt-card"><strong><span class="count-up" data-count="4">0</span><sup>+</sup></strong><span>years professional development</span></div>
+                <div class="stat-card tilt-card"><strong><span class="count-up" data-count="2">0</span></strong><span>companies · startup to enterprise</span></div>
+                <div class="stat-card tilt-card"><strong><span class="count-up" data-count="6">0</span></strong><span>services I can support</span></div>
+              </div>
+              <div class="recognition">
+                <p class="recognition-label">Recognition</p>
+                <span>Academic Achiever</span>
+                <span>Academic Excellence Awardee</span>
+                <span>Feature Writing Awardee</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- ================= CERTIFICATIONS ================= -->
-  <section class="section" id="certifications" style="display: none;">
-    <div class="container">
-      <div class="section-head reveal">
-        <p class="eyebrow">Certifications</p>
-        <h2>Formal certifications.</h2>
-      </div>
-      <div class="empty-card reveal">
-        <h3>No certifications listed yet</h3>
-        <p>Sheena's resume doesn't include formal certifications. This section is ready to feature them as soon as they're added.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= ACHIEVEMENTS ================= -->
-  <section class="section" id="achievements" style="background:var(--paper-alt);">
-    <div class="container">
-      <div class="section-head reveal">
-        <p class="eyebrow">Achievements</p>
-        <h2>Recognition along the way.</h2>
-      </div>
-
-      <div class="ach-grid">
-        <div class="ach-card bracket-card reveal">
-          <div class="ach-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></svg></div>
-          <h3>Academic Achiever</h3>
-          <p>Eastern Visayas State University, BS Information Technology (2018–2022).</p>
+      <section class="section services-section" id="services" aria-labelledby="servicesTitle">
+        <div class="section-wrap">
+          <header class="section-heading section-heading-row" data-reveal>
+            <div><p class="eyebrow">Services</p><h2 id="servicesTitle">What I can help<br><span>you bring to life.</span></h2></div>
+            <p>Six ways I can support your next build — from the first UI pass to the polish after launch.</p>
+          </header>
+          <div class="services-grid">
+            <article class="service-card tilt-card" tabindex="0" data-reveal style="--delay: 0ms">
+              <span class="service-number">01</span><span class="service-icon" aria-hidden="true">&lt;/&gt;</span>
+              <span class="service-title">Front-End Development</span>
+              <span class="service-detail"><span>Responsive production UI built with semantic markup, maintainable styles, and interactive JavaScript.</span><b>What you get · A polished interface that works across screens.</b></span>
+              <span class="service-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="service-card tilt-card" tabindex="0" data-reveal style="--delay: 50ms">
+              <span class="service-number">02</span><span class="service-icon" aria-hidden="true">⌁</span>
+              <span class="service-title">Website Maintenance &amp; Optimization</span>
+              <span class="service-detail"><span>Thoughtful fixes, refactoring, performance tuning, and feature work in existing codebases.</span><b>What you get · Reliable updates without disrupting what works.</b></span>
+              <span class="service-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="service-card tilt-card" tabindex="0" data-reveal style="--delay: 100ms">
+              <span class="service-number">03</span><span class="service-icon" aria-hidden="true">⤳</span>
+              <span class="service-title">API Integration &amp; Backend Support</span>
+              <span class="service-detail"><span>REST API and JSON integrations, plus PHP and MySQL support for full-stack features.</span><b>What you get · Connected experiences backed by dependable data flows.</b></span>
+              <span class="service-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="service-card tilt-card" id="service-ai" tabindex="0" data-reveal style="--delay: 150ms">
+              <span class="service-number">04</span><span class="service-icon" aria-hidden="true">✳</span>
+              <span class="service-title">AI Content Creation</span>
+              <span class="service-detail"><span>Campaign-ready image, audio, and video concepts shaped with purposeful prompts.</span><b>What you get · On-brief creative assets and short-form scripts.</b></span>
+              <span class="service-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="service-card tilt-card" tabindex="0" data-reveal style="--delay: 200ms">
+              <span class="service-number">05</span><span class="service-icon" aria-hidden="true">▣</span>
+              <span class="service-title">Video Editing</span>
+              <span class="service-detail"><span>Short-form edits with pacing, sound, text overlays, and Hook–Punch–CTA structure.</span><b>What you get · Finished clips ready for social campaigns.</b></span>
+              <span class="service-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="service-card tilt-card" id="service-wordpress" tabindex="0" data-reveal style="--delay: 250ms">
+              <span class="service-number">06</span><span class="service-icon" aria-hidden="true">W</span>
+              <span class="service-title">WordPress Development</span>
+              <span class="service-detail"><span>Custom themes, child themes, plugins, and editable content experiences for business sites.</span><b>What you get · A flexible site you can manage and grow.</b></span>
+              <span class="service-arrow" aria-hidden="true">↗</span>
+            </article>
+          </div>
         </div>
+      </section>
 
-        <div class="ach-card bracket-card reveal">
-          <div class="ach-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></svg></div>
-          <h3>Academic Excellence Awardee</h3>
-          <p>Western Leyte College of Ormoc City, Inc., TVL–ICT (2016–2018).</p>
-        </div>
-
-        <div class="ach-card bracket-card reveal">
-          <div class="ach-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V6a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v14"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H19"/><path d="M9 8h6"/></svg></div>
-          <h3>Feature Writing Awardee</h3>
-          <p>School Publication Organization Award for Feature Writing.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= CONTACT ================= -->
-  <section class="section" id="contact" >
-    <div class="container">
-      <div class="contact">
-        <div class="reveal">
-          <p class="eyebrow">Contact</p>
-          <h2>Let's build something precise.</h2>
-          <p style="color:var(--ink-soft); font-size:16.5px;">Open to frontend and full-stack opportunities. The fastest way to reach is by email or LinkedIn.</p>
-
-          <div class="contact-info-list">
-            <div class="contact-row">
-              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6 12 13 2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></span>
-              <div><span class="lbl">Email</span><a href="mailto:sheenaponsica1125@gmail.com">sheenaponsica1125@gmail.com</a></div>
-            </div>
-            <div class="contact-row">
-              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L7.9 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg></span>
-              <div><span class="lbl">Phone</span><a href="tel:+639108236318">+63 910 823 6318</a></div>
-            </div>
-            <div class="contact-row">
-              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M8 9h4v2c1-1.5 2.7-2.3 4.5-2.3 3 0 5.5 2 5.5 5.6V21h-4v-6c0-1.7-.8-2.8-2.3-2.8-1.4 0-2.7 1-2.7 2.8V21H8z"/></svg></span>
-              <div><span class="lbl">LinkedIn</span><a href="https://www.linkedin.com/in/sheenaponsica" target="_blank" rel="noopener">linkedin.com/in/sheenaponsica</a></div>
-            </div>
-            <div class="contact-row">
-              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.6 2.8 5.5 3.1 5.5 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.1 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></span>
-              <div><span class="lbl">GitHub</span><a href="https://github.com/sheena-ponsica" target="_blank" rel="noopener">https://github.com/sheena-ponsica</a></div>
-            </div>
-            <div class="contact-row">
-              <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2H6a4 4 0 0 0-4 4v12a4 4 0 0 0 4 4h12a4 4 0 0 0 4-4V6a4 4 0 0 0-4-4Z"/><path d="M15 8h-1a3 3 0 0 0-3 3v9M8 13h6"/></svg></span>
-              <div><span class="lbl">Facebook</span><a href="https://www.facebook.com/shinaaamarie" target="_blank" rel="noopener">facebook.com/shinaaamarie</a></div>
-            </div>
-            <div class="contact-row">
-              <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".75" fill="currentColor" stroke="none"/></svg></span>
-              <div><span class="lbl">Instagram</span><a href="https://www.instagram.com/_nashee.xx" target="_blank" rel="noopener">instagram.com/_nashee.xx</a></div>
+      <section class="section skills-section" id="skills" aria-labelledby="skillsTitle">
+        <div class="section-wrap">
+          <header class="section-heading section-heading-row" data-reveal>
+            <div><p class="eyebrow">Skills</p><h2 id="skillsTitle">Technologies I use.</h2></div>
+            <p>A focused stack of the tools I reach for most often in frontend and full-stack work.</p>
+          </header>
+          <div class="skills-strip" role="region" aria-label="Technology stack" tabindex="0">
+            <div class="skills-strip-track">
+              <ul class="tech-card-set" aria-label="Technologies I use">
+                <li class="tech-card" title="JavaScript · interactive UI and application behavior"><span class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" loading="lazy"></span><span class="tech-card-label">JavaScript</span></li>
+                <li class="tech-card" title="TypeScript · typed frontend development"><span class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="" loading="lazy"></span><span class="tech-card-label">TypeScript</span></li>
+                <li class="tech-card" title="React · component-based personal applications"><span class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" loading="lazy"></span><span class="tech-card-label">React</span></li>
+                <li class="tech-card" title="HTML5 · semantic structure and accessible pages"><span class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" loading="lazy"></span><span class="tech-card-label">HTML5</span></li>
+                <li class="tech-card" title="CSS3 · responsive styling and interface polish"><span class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" loading="lazy"></span><span class="tech-card-label">CSS3</span></li>
+                <li class="tech-card" title="Node.js · backend fundamentals and JavaScript tooling"><span class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="" loading="lazy"></span><span class="tech-card-label">Node.js</span></li>
+                <li class="tech-card" title="MySQL · relational data and application support"><span class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="" loading="lazy"></span><span class="tech-card-label">MySQL</span></li>
+                <li class="tech-card" title="Bootstrap · responsive production layouts"><span class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="" loading="lazy"></span><span class="tech-card-label">Bootstrap</span></li>
+                <li class="tech-card" title="Tailwind CSS · utility-first responsive interfaces"><span class="tech-card-icon"><img src="https://raw.githubusercontent.com/devicons/devicon/v2.15.1/icons/tailwindcss/tailwindcss-plain.svg" alt="" loading="lazy"></span><span class="tech-card-label">Tailwind CSS</span></li>
+                <li class="tech-card" title="PHP · WordPress and application backend support"><span class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="" loading="lazy"></span><span class="tech-card-label">PHP</span></li>
+                <li class="tech-card" title="WordPress · themes, plugins, and editable sites"><span class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="" loading="lazy"></span><span class="tech-card-label">WordPress</span></li>
+                <li class="tech-card" title="Vue.js · practical, project-tested UI development"><span class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="" loading="lazy"></span><span class="tech-card-label">Vue.js</span></li>
+                <li class="tech-card" title="jQuery · maintenance and interaction work in existing code"><span class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" alt="" loading="lazy"></span><span class="tech-card-label">jQuery</span></li>
+                <li class="tech-card" title="Git · version control"><span class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" loading="lazy"></span><span class="tech-card-label">Git</span></li>
+                <li class="tech-card" title="Docker · project-tested environment tooling"><span class="tech-card-icon tech-card-icon-docker"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="" loading="lazy"></span><span class="tech-card-label">Docker</span></li>
+                <li class="tech-card" title="Sourcetree · review and manage version-control changes"><span class="tech-card-icon tech-card-icon-sourcetree"><img src="assets/images/icons/sourcetree_icon.webp" alt="" loading="lazy"></span><span class="tech-card-label">Sourcetree</span></li>
+                <li class="tech-card" title="Jira · track development tasks and progress"><span class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="" loading="lazy"></span><span class="tech-card-label">Jira</span></li>
+                <li class="tech-card" title="Notion · organize project notes and documentation"><span class="tech-card-icon tech-card-icon-notion"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" alt="" loading="lazy"></span><span class="tech-card-label">Notion</span></li>
+                <li class="tech-card" title="Cyberduck · transfer project files"><span class="tech-card-icon tech-card-icon-cyberduck"><img src="assets/images/icons/cyberduck_icon.webp" alt="" loading="lazy"></span><span class="tech-card-label">Cyberduck</span></li>
+                <li class="tech-card" title="Figma · translate design specifications into responsive UI"><span class="tech-card-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="" loading="lazy"></span><span class="tech-card-label">Figma</span></li>
+                <li class="tech-card" title="CapCut · edit short videos with sound, text overlays, and pacing"><span class="tech-card-icon tech-card-icon-capcut"><img src="assets/images/icons/capcut_icon.svg" alt="" loading="lazy"></span><span class="tech-card-label">CapCut</span></li>
+                <li class="tech-card" title="Canva · create campaign and marketing visuals"><span class="tech-card-icon tech-card-icon-canva"><img src="assets/images/icons/canva_icon.svg" alt="" loading="lazy"></span><span class="tech-card-label">Canva</span></li>
+                <li class="tech-card" title="Adobe · create and refine creative assets"><span class="tech-card-icon tech-card-icon-adobe" aria-hidden="true">A</span><span class="tech-card-label">Adobe</span></li>
+                <li class="tech-card" title="AI-assisted development and content tools"><span class="tech-card-icon tech-card-icon-ai"><img src="assets/images/icons/ai_file_icon.webp" alt="" loading="lazy"></span><span class="tech-card-label">AI tools</span></li>
+                <li class="tech-card" title="GitHub Copilot · AI-assisted development, debugging, and documentation"><span class="tech-card-icon tech-card-icon-ai-mark" aria-hidden="true">GH</span><span class="tech-card-label">GitHub Copilot</span></li>
+                <li class="tech-card" title="Claude · implementation reasoning, debugging, and documentation"><span class="tech-card-icon tech-card-icon-ai-mark" aria-hidden="true">C</span><span class="tech-card-label">Claude</span></li>
+                <li class="tech-card" title="ChatGPT · explore implementation options and draft documentation"><span class="tech-card-icon tech-card-icon-ai-mark" aria-hidden="true">GPT</span><span class="tech-card-label">ChatGPT</span></li>
+                <li class="tech-card" title="Cursor · AI-assisted development and codebase exploration"><span class="tech-card-icon tech-card-icon-ai-mark" aria-hidden="true">Cu</span><span class="tech-card-label">Cursor</span></li>
+                <li class="tech-card" title="Gemini · AI-supported development, debugging, and content"><span class="tech-card-icon tech-card-icon-ai-mark" aria-hidden="true">G</span><span class="tech-card-label">Gemini</span></li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
-        <form class="form-card reveal" id="contactForm" style="display:none;">
-          <div class="form-two">
-            <div class="form-row">
-              <label for="fname">Full name</label>
-              <input type="text" id="fname" name="name" placeholder="Juan Dela Cruz" required>
-            </div>
-            <div class="form-row">
-              <label for="femail">Email</label>
-              <input type="email" id="femail" name="email" placeholder="you@company.com" required>
-            </div>
-          </div>
-          <div class="form-row">
-            <label for="fsubject">Subject</label>
-            <input type="text" id="fsubject" name="subject" placeholder="Frontend role at..." required>
-          </div>
-          <div class="form-row">
-            <label for="fmessage">Message</label>
-            <textarea id="fmessage" name="message" rows="5" placeholder="Tell Sheena about the opportunity..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Message</button>
-          <p class="form-note">This form is front-end only in this template — connect it to a form service (e.g. Formspree) or backend endpoint to receive submissions.</p>
-          <p class="form-status" id="formStatus" role="status"></p>
-        </form>
-    </div>
-  </section>
+      </section>
 
-</main>
+      <section class="section projects-section" id="projects" aria-labelledby="projectsTitle">
+        <div class="section-wrap">
+          <header class="section-heading section-heading-row" data-reveal>
+            <div><p class="eyebrow">Selected work</p><h2 id="projectsTitle">Work in context.<br><span>Built for real people.</span></h2></div>
+            <p>Interfaces, WordPress builds, product UI, and AI-powered creative I’ve shipped or prototyped. Each story opens into related pages and projects.</p>
+          </header>
 
-<!-- ================= FOOTER ================= -->
-<footer class="site-footer" style="background:var(--paper-alt);">
-  <div class="container footer-inner">
-    <p class="footer-copy">© <span id="year"></span> Sheena Ponsica. All rights reserved.</p>
-    <div class="social-row">
-      <a href="mailto:sheenaponsica1125@gmail.com" aria-label="Email">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6 12 13 2 6"/></svg>
-      </a>
-      <a href="https://www.linkedin.com/in/sheenaponsica" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M8 9h4v2c1-1.5 2.7-2.3 4.5-2.3 3 0 5.5 2 5.5 5.6V21h-4v-6c0-1.7-.8-2.8-2.3-2.8-1.4 0-2.7 1-2.7 2.8V21H8z"/></svg>
-      </a>
-    </div>
+          <div class="project-list">
+            <article class="project-feature tilt-card" data-reveal>
+              <div class="project-media">
+                <div class="browser-frame">
+                  <div class="browser-chrome"><span></span><span></span><span></span><small>nativecamp.net</small></div>
+                  <img src="assets/images/works/Nativecamp.webp" alt="NativeCamp main website preview" loading="lazy">
+                </div>
+                <span class="media-caption">01 / Educational Platform</span>
+              </div>
+                <p class="project-kicker">01 · Frontend development · EdTech</p>
+                <h3>NativeCamp projects</h3>
+                <p>Responsive platform pages and learning experiences for a large EdTech product — translating design specs into production interfaces within an established MVC codebase.</p>
+                <div class="project-stack" aria-label="Project technologies">
+                  <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">HTML5</span>
+                  <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="">CSS3</span>
+                  <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="">JavaScript</span>
+                  <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="">Bootstrap</span>
+                  <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="">Tailwind</span>
+                </div>
+                <div class="project-actions"><a class="text-link" href="https://nativecamp.net" target="_blank" rel="noopener noreferrer">Visit NativeCamp <span aria-hidden="true">↗</span></a></div>
+              </div>
+              <details class="project-details">
+                <summary><span>See 9 related projects</span><span class="summary-icon" aria-hidden="true">+</span></summary>
+                <div class="subproject-grid">
+                  <article class="subproject-card"><img src="assets/images/works/corporate_landing_page.webp" alt="" loading="lazy"><div><h4>Corporate Landing Page</h4><p>Responsive information about business English programs, plans, pricing, and case studies.</p><a href="https://nativecamp.net/corporate" target="_blank" rel="noopener noreferrer">Visit site ↗</a></div></article>
+                  <article class="subproject-card"><img src="assets/images/works/Nativecamp-overseas-lp.webp" alt="" loading="lazy"><div><h4>Taiwan Landing Page</h4><p>Traditional Chinese landing page with a three-step onboarding flow, built with Tailwind CSS.</p><a href="https://nativecamp.net/zh-tw" target="_blank" rel="noopener noreferrer">Visit site ↗</a></div></article>
+                  <article class="subproject-card"><img src="assets/images/works/kids_landing_page.webp" alt="" loading="lazy"><div><h4>NativeCamp Kids</h4><p>Family-friendly lesson introduction designed for parents and children.</p><a href="https://nativecamp.net/kids" target="_blank" rel="noopener noreferrer">Visit site ↗</a></div></article>
+                  <article class="subproject-card"><img src="assets/images/works/registration_page.webp" alt="" loading="lazy"><div><h4>Account Registration Flow</h4><p>Student sign-up page designed for clarity, validation, and cross-browser reliability.</p><a href="https://nativecamp.net/register" target="_blank" rel="noopener noreferrer">Visit site ↗</a></div></article>
+                  <article class="subproject-card"><img src="assets/images/works/sitemap_page.webp" alt="" loading="lazy"><div><h4>Study Abroad Sitemap</h4><p>Structured navigation through destination and study-abroad resources.</p><a href="https://nativecamp.net/study_abroad/sitemap" target="_blank" rel="noopener noreferrer">Visit site ↗</a></div></article>
+                  <article class="subproject-card"><img src="assets/images/works/textbook.webp" alt="" loading="lazy"><div><h4>Interactive Textbook Page</h4><p>A sample from the interactive textbook and learning material library.</p><a href="https://nativecamp.net/textbook/page-detail/2/26145" target="_blank" rel="noopener noreferrer">Visit lesson ↗</a></div></article>
+                  <article class="subproject-card"><img src="assets/images/works/usage_pages.webp" alt="" loading="lazy"><div><h4>Usage &amp; How-To Guide</h4><p>A responsive student guide to booking, joining, and using lessons.</p><a href="https://nativecamp.net/usage" target="_blank" rel="noopener noreferrer">Visit site ↗</a></div></article>
+                  <article class="subproject-card"><img src="assets/images/works/dumaguete_page.webp" alt="" loading="lazy"><div><h4>Dumaguete Destination Page</h4><p>Study-abroad destination details, local school information, programs, and living costs.</p><a href="https://nativecamp.net/study_abroad/countries/philippines-dumaguete" target="_blank" rel="noopener noreferrer">Visit site ↗</a></div></article>
+                  <article class="subproject-card"><img src="assets/images/works/study_abroad_sections.webp" alt="" loading="lazy"><div><h4>Study Abroad Hub</h4><p>The program landing page for destinations, study options, and next steps.</p><a href="https://nativecamp.net/study_abroad" target="_blank" rel="noopener noreferrer">Visit site ↗</a></div></article>
+                </div>
+              </details>
+            </article>
+
+            <article class="project-feature project-reverse tilt-card" data-reveal>
+              <div class="project-media">
+                <div class="browser-frame">
+                  <div class="browser-chrome"><span></span><span></span><span></span><small>virtualstaffing.net</small></div>
+                  <img src="assets/images/works/virtualstaffing.webp" alt="Virtual Staffing Solutions main website preview" loading="lazy">
+                </div>
+                <span class="media-caption">02 / BPO Company Internal Staffing Ops</span>
+              </div>
+              <div class="project-copy">
+                <p class="project-kicker">02 · Web development · Business tools</p>
+                <h3>Virtual Staffing Solutions</h3>
+                <p>Business dashboards and web experiences built to support staffing operations, reporting, data management, and company training.</p>
+                <div class="project-stack" aria-label="Project technologies">
+                  <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">HTML5</span>
+                  <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="">CSS3</span>
+                  <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="">JavaScript</span>
+                  <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="">PHP</span>
+                  <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="">MySQL</span>
+                </div>
+                <div class="project-actions"><a class="text-link" href="https://virtualstaffing.net" target="_blank" rel="noopener noreferrer">Visit Virtual Staffing Solutions <span aria-hidden="true">↗</span></a></div>
+              </div>
+              <details class="project-details">
+                <summary><span>See 2 related projects</span><span class="summary-icon" aria-hidden="true">+</span></summary>
+                <div class="subproject-grid">
+                  <article class="subproject-card"><img src="assets/images/works/vss_dashboard.webp" alt="" loading="lazy"><div><h4>Virtual Staffing Solutions Dashboard</h4><p>Dashboard for staffing operations and data visualization.</p></div></article>
+                  <article class="subproject-card"><img src="assets/images/works/vss_academy_website.webp" alt="" loading="lazy"><div><h4>Virtual Staffing Solutions Academy</h4><p>Academy site presenting courses, faculty, and enrollment information.</p></div></article>
+                </div>
+              </details>
+            </article>
+
+            <article class="project-feature tilt-card" data-reveal>
+              <div class="project-media">
+                <div class="browser-frame">
+                  <div class="browser-chrome"><span></span><span></span><span></span><small>brew-and-crust.vercel.app</small></div>
+                  <img src="assets/images/projects/brew-and-crust_landing-page.webp" alt="Brew &amp; Crust storefront work preview" loading="lazy">
+                </div>
+                <span class="media-caption">03 / Personal created projects</span>
+              </div>
+              <div class="project-copy">
+                <p class="project-kicker">03 · Personal builds · Product UI</p>
+                <h3>Personal created projects</h3>
+                <p>Product prototypes spanning a coffee shop storefront and operations tools, practical finance calculators, image utilities, and WordPress sites. The Brew &amp; Crust React build uses reusable components, React Router, state patterns, and responsive storefront, admin, and POS layouts.</p>
+                <div class="project-stack" aria-label="Project technologies">
+                  <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="">React</span>
+                  <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="">JavaScript</span>
+                  <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="">WordPress</span>
+                  <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="">PHP</span>
+                </div>
+                <div class="project-actions"><a class="text-link" href="https://brew-and-crust.vercel.app/" target="_blank" rel="noopener noreferrer">Open Brew &amp; Crust <span aria-hidden="true">↗</span></a></div>
+              </div>
+              <details class="project-details">
+                <summary><span>See 7 related projects</span><span class="summary-icon" aria-hidden="true">+</span></summary>
+                <div class="subproject-grid">
+                  <article class="subproject-card"><img src="assets/images/projects/brew-and-crust_landing-page.webp" alt="" loading="lazy"><div><h4>Brew &amp; Crust Storefront</h4><p>Responsive coffee shop website with product storytelling and mobile browsing.</p><a href="https://brew-and-crust.vercel.app/" target="_blank" rel="noopener noreferrer">Open project ↗</a></div></article>
+                  <article class="subproject-card"><img src="assets/images/projects/brew-and-crust_admin-dashboard.webp" alt="" loading="lazy"><div><h4>Operations Dashboard</h4><p>Admin tools for tracking orders and managing business operations.</p><a href="https://brew-and-crust.vercel.app/admin" target="_blank" rel="noopener noreferrer">Open admin ↗</a></div></article>
+                  <article class="subproject-card"><img src="assets/images/projects/brew-and-crust_pos.webp" alt="" loading="lazy"><div><h4>Point of Sale Interface</h4><p>Cashier flow with category filtering, order assembly, and split-payment checkout actions.</p><a href="https://brew-and-crust.vercel.app/pos" target="_blank" rel="noopener noreferrer">Open POS ↗</a></div></article>
+                  <article class="subproject-card"><img src="assets/images/projects/13-month-calculator.webp" alt="" loading="lazy"><div><h4>13th Month Pay Calculator</h4><p>Payroll utility for 13th month estimates, deductions, and take-home totals.</p><a href="https://sheena-13th-month-calculator.vercel.app/" target="_blank" rel="noopener noreferrer">Open project ↗</a></div></article>
+                  <article class="subproject-card"><img src="assets/images/projects/loan-calculator.webp" alt="" loading="lazy"><div><h4>Loan Calculator</h4><p>Estimator for personal, home, car, and business loans, with payment breakdowns, interest summaries, and eligibility checks.</p><a href="https://sheena-loan-calculator.vercel.app/" target="_blank" rel="noopener noreferrer">Open project ↗</a></div></article>
+                  <article class="subproject-card"><img src="assets/images/works/id-tools.webp" alt="ID Tools photo resizer and image utilities interface" loading="lazy"><div><h4>ID Tools</h4><p>Image utilities for resizing and framing ID photos, converting formats, and compressing images.</p><a href="https://id-tools-sheena.vercel.app/" target="_blank" rel="noopener noreferrer">Open project ↗</a></div></article>
+                  <article class="subproject-card"><img src="assets/images/projects/adventure-wall.webp" alt="" loading="lazy"><div><h4>Adventure Wall</h4><p>Community storytelling site for sharing and exploring travel adventures.</p><a href="https://adventure-wall.netlify.app/" target="_blank" rel="noopener noreferrer">Open project ↗</a></div></article>
+                </div>
+              </details>
+            </article>
+
+            <article class="project-feature project-reverse tilt-card" data-reveal>
+              <div class="project-media">
+                <div class="browser-frame">
+                  <div class="browser-chrome"><span></span><span></span><span></span><small>elementor-web.infinityfree.io</small></div>
+                  <img src="assets/images/works/elementor-porfolio.webp" alt="Sheena Ponsica WordPress portfolio preview" loading="lazy">
+                </div>
+                <span class="media-caption">04 / WordPress websites</span>
+              </div>
+              <div class="project-copy">
+                <p class="project-kicker">04 · WordPress · Websites</p>
+                <h3>WordPress projects</h3>
+                <p>Editable WordPress websites built with custom layouts and Elementor, from a personal portfolio to a content-focused publication.</p>
+                <div class="project-stack" aria-label="Project technologies">
+                  <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="">WordPress</span>
+                  <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="">PHP</span>
+                  <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="">CSS3</span>
+                </div>
+                <div class="project-actions"><a class="text-link" href="https://elementor-web.infinityfree.io/" target="_blank" rel="noopener noreferrer">View portfolio <span aria-hidden="true">↗</span></a></div>
+              </div>
+              <details class="project-details">
+                <summary><span>See 2 related projects</span><span class="summary-icon" aria-hidden="true">+</span></summary>
+                <div class="subproject-grid">
+                  <article class="subproject-card"><img src="assets/images/works/elementor-porfolio.webp" alt="" loading="lazy"><div><h4>Sheena Ponsica Portfolio</h4><p>Personal portfolio site built with WordPress and Elementor.</p><a href="https://elementor-web.infinityfree.io/" target="_blank" rel="noopener noreferrer">View portfolio ↗</a></div></article>
+                  <article class="subproject-card"><img src="assets/images/projects/akyat-ng-mga-gastador.webp" alt="" loading="lazy"><div><h4>Akyat ng mga Gastador</h4><p>Content-focused WordPress site for stories, updates, and audience connection.</p><a href="https://akyat-ng-mga-gastador.infinityfree.io/" target="_blank" rel="noopener noreferrer">Open project ↗</a></div></article>
+                </div>
+              </details>
+            </article>
+
+            <article class="project-feature tilt-card" data-reveal>
+              <div class="project-media">
+                <div class="browser-frame">
+                  <div class="browser-chrome"><span></span><span></span><span></span><small>AI content showcase</small></div>
+                  <img src="assets/images/works/ai_content_creation.webp" alt="AI-generated campaign content preview" loading="lazy">
+                </div>
+                <span class="media-caption">05 / AI content creation</span>
+              </div>
+              <div class="project-copy">
+                <p class="project-kicker">05 · AI-assisted creative · Video &amp; image</p>
+                <h3>AI content creation</h3>
+                <p>Campaign-ready image and video concepts shaped with AI tools, then edited into short-form creative with a clear Hook–Punch–CTA flow.</p>
+                <div class="project-stack" aria-label="Creative tools">
+                  <span><img src="assets/images/icons/canva_icon.svg" alt="">Canva</span>
+                  <span><img src="assets/images/icons/capcut_icon.svg" alt="">CapCut</span>
+                  <span>AI tools</span>
+                </div>
+                <div class="project-actions"><a class="text-link" href="https://fb.me/adspreview/facebook/22qnOCjsc5l6Ovb" target="_blank" rel="noopener noreferrer">View campaign <span aria-hidden="true">↗</span></a></div>
+              </div>
+              <details class="project-details">
+                <summary><span>See 5 related projects</span><span class="summary-icon" aria-hidden="true">+</span></summary>
+                <div class="subproject-grid">
+                  <article class="subproject-card"><img src="assets/images/works/ai_content_creation.webp" alt="" loading="lazy"><div><h4>AI-Generated Campaign Content</h4><p>Video and image campaign assets tailored to the Japanese market.</p><a href="https://fb.me/adspreview/facebook/22qnOCjsc5l6Ovb" target="_blank" rel="noopener noreferrer">View campaign ↗</a></div></article>
+                  <article class="subproject-card subproject-video"><video src="assets/videos/Restau-Convo-Square.mov" poster="assets/images/works/restaurant-scene-poster.jpg" controls preload="none" playsinline aria-label="Restaurant scene AI video advertisement"></video><div><h4>Restaurant Scene — AI Video Ad</h4><p>AI-generated restaurant conversation concept edited for short-form delivery.</p></div></article>
+                  <article class="subproject-card subproject-folder"><img src="assets/images/works/fdc.webp" alt="FDC logo" loading="lazy"><div><h4>FDC Marketing AI Videos</h4><p>More AI content creation videos for FDC Marketing.</p><a href="https://drive.google.com/drive/folders/18rPdH7ndiGtn4I08ZYfu1lbLeUuDNcnO?usp=drive_link" target="_blank" rel="noopener noreferrer">Browse video folder ↗</a></div></article>
+                  <article class="subproject-card subproject-folder"><span class="folder-mark" aria-hidden="true">✦</span><div><h4>Additional AI Content</h4><p>More AI-generated content creation work.</p><a href="https://drive.google.com/drive/folders/1UWMmR87gbYLBvSdC5DEcloIhiRm1TkIE?usp=sharing" target="_blank" rel="noopener noreferrer">Browse content folder ↗</a></div></article>
+                </div>
+              </details>
+            </article>
+          </div>
+          <div class="see-more-wrap" data-reveal><button class="button button-light" id="seeMoreProjects" type="button" aria-expanded="false">See more projects <span aria-hidden="true">↓</span></button><p class="see-more-note">Expand each project to explore its related pages and builds.</p></div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contactTitle">
+        <div class="contact-glow" aria-hidden="true"></div>
+        <div class="section-wrap contact-wrap">
+          <div class="contact-copy" data-reveal>
+            <p class="eyebrow">Have a good one in mind?</p>
+            <h2 id="contactTitle">Let’s build something<br><span>precise.</span></h2>
+            <p>Open to frontend and full-stack opportunities. Fastest reach is email or phone.</p>
+            <div class="contact-detail">
+              <span class="contact-meta-label">Email:</span>
+              <a class="contact-email" href="mailto:sheenaponsica1125@gmail.com">sheenaponsica1125@gmail.com <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-meta-label">Mobile Number:</span>
+              <a class="contact-phone" href="tel:+639108236318">+63 910 823 6318</a>
+            </div>
+            <div class="contact-socials">
+              <span class="contact-meta-label">Social Links:</span>
+              <div class="social-links" aria-label="Social profiles">
+                <a href="https://www.linkedin.com/in/sheenaponsica" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                <a href="https://github.com/sheena-ponsica" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                <a href="https://www.facebook.com/shinaaamarie" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+                <a href="https://www.instagram.com/_nashee.xx" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+                <a href="https://v2.onlinejobs.ph/jobseekers/info/4439516" target="_blank" rel="noopener noreferrer">OLJ Account ↗</a>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm" novalidate data-reveal style="--delay: 120ms">
+            <p class="form-kicker">Send a message</p>
+            <label for="contactName">Your name</label>
+            <input id="contactName" name="name" type="text" autocomplete="name" required minlength="2" placeholder="How should I address you?">
+            <span class="field-error" id="nameError" aria-live="polite"></span>
+            <label for="contactEmail">Email address</label>
+            <input id="contactEmail" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+            <span class="field-error" id="emailError" aria-live="polite"></span>
+            <label for="contactMessage">Your message</label>
+            <textarea id="contactMessage" name="message" rows="4" required minlength="10" placeholder="Tell me a little about what you have in mind."></textarea>
+            <span class="field-error" id="messageError" aria-live="polite"></span>
+            <div class="contact-honeypot" aria-hidden="true">
+              <label for="contactWebsite">Leave this field empty</label>
+              <input id="contactWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+            <button class="button button-primary form-submit" type="submit">Submit <span aria-hidden="true">↗</span></button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            <p class="form-note">Your message will be sent directly to my email. You can also reach me at sheenaponsica1125@gmail.com.</p>
+          </form>
+        </div>
+        <footer class="site-footer">
+          <p>Designed &amp; built by Sheena Ponsica <span class="footer-copyright">© <span id="year"></span></span></p>
+        </footer>
+      </section>
+    </main>
   </div>
-</footer>
-
-<button class="back-to-top" id="backToTop" aria-label="Back to top">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
-</button>
-
-<div id="lightbox" class="lightbox">
-  <span class="lightbox-close">&times;</span>
-  <img id="lightbox-image" src="" alt="">
-</div>
-
-<script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
